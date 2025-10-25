@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medicine Reminder App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>💊 Medicine Reminder</h1>
+
+    <form id="reminderForm">
+      <input type="text" id="medicineName" placeholder="Medicine name" required />
+      <input type="time" id="reminderTime" required />
+      <select id="foodType" required>
+        <option value="" disabled selected>Select food type</option>
+        <option value="Before Food">Before Food</option>
+        <option value="After Food">After Food</option>
+        <option value="With Food">With Food</option>
+      </select>
+      <input type="number" id="daysPeriod" placeholder="No. of days" min="1" required />
+      <button type="submit">Add Reminder</button>
+    </form>
+
+    <div class="reminder-list" id="reminderList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
